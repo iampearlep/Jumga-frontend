@@ -1,0 +1,206 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    overflow: hidden;
+}
+ul {
+    list-style: none;
+}
+h2 {
+font-weight: 700;
+font-size: 1.875rem;
+line-height: 1.25;
+margin: -1rem 0 1.875rem;
+}
+h2, p {
+    text-align: center;
+} 
+p {
+    font-size: 1.25rem
+}
+.container {
+    height: 100vh;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0.2rem;
+}
+.form-box {
+    display: flex;
+    flex-direction: column; 
+    height: 100vh;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 15px;
+}
+.logo{
+    display: flex;
+}
+.logo img{
+    width: 30%;
+    margin: 2rem auto 2rem;
+}
+.form-box .progress {
+    position: relative;
+    padding: 1rem;
+    background-color: #3D348d;
+    height: 625px;
+    margin-top: -10px;
+    margin-right: -5px;
+}
+.login a{
+    text-align: left;
+    color: #fff;
+    margin: 2rem 0 150px 15%;
+    text-decoration: underline #A1A1A1 0.5px;
+   
+}
+.progress-img img {
+    position: relative;
+    width: 60%;
+    margin: 1rem 0 0 17%;
+}
+.vector-img {
+    position: absolute;
+    width: 15%;
+    z-index: 2;
+    margin-top: -318px;
+}
+.progress ul.progress-steps {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;    
+    justify-content: flex-start;
+    gap: 2rem;
+    color: #fff;
+    margin-top: 2rem;
+    font-size: 1.1rem;
+}
+.progress ul.progress-steps li {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 2rem;
+}
+.progress ul li p {
+    position: absolute;
+    text-align: left;
+    margin-left: 10px;
+}
+.form-box form {
+    width: 100%;
+    padding: 3rem;
+    background-color: #fff;
+    border-radius: 30px 30px 15px 15px;
+}
+form > div {
+    max-width: 400px;
+    margin: 0 auto;
+}
+form > div p {
+    color:  #111;
+    margin-bottom: 2rem;
+}
+form > div > div:not(.checkbox) {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+}
+form :where(input,select) {
+    height: 50px;
+    padding: 0 1rem;
+    border-radius: 7px;
+    outline-color: #f6f6f6;
+    border: 1px solid #f6f6f6;
+    background-color: #f6f6f6;
+}
+.checkbox {
+    display: flex;
+    justify-content: space-between;
+}
+.checkbox a {
+    color: #111;
+    text-decoration: underline #111 0.5px;
+}
+form .checkbox input {
+    height: auto;
+}
+form .checkbox label {
+    font-size: 0.975rem;
+}
+.login-btn {
+    margin-top: 2.5rem;
+}
+.login-btn button {
+    background-color: #3D348d;
+    color: #fff;
+    font-size: 1.1rem;
+    border:1px solid #3D348d;
+    border-radius: 7px;
+    padding: 0.875rem 2.5rem;
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 768px){
+    .form-box {
+        display: flex;
+        flex-direction: row-reverse; /* row-reverse direction */
+    }
+    .progress ul.progress-steps  {
+        flex-direction: column;
+        gap: 0;
+    }
+    .progress ul.progress-steps li {
+        margin-bottom: 3rem;
+    } 
+    .form-box .progress {
+        flex: 1 0 35%;
+        min-width: 300px;
+        padding: 3rem;
+    }
+    .logo {
+        margin: -48px -48px 48px;
+    }
+    .progress ul .progress-steps  {
+        flex-direction: column;
+    }
+    
+    .form-box form {
+        padding: 3rem;
+        border-radius: 0 15px 15px 0;
+    }
+    .progress ul li p {
+        position: relative;
+        top: auto;
+        font-size: inherit;
+    }
+    .progress ul.progress-steps li p span {
+        display: block;
+    }
+}
